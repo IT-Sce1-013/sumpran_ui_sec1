@@ -1,0 +1,692 @@
+.general-info-page-root {
+  min-height: 100vh;
+  background-color: #f8faf9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== 3 คอลัมน์ Body ==================== */
+.general-info-body {
+  max-width: 1380px;
+  width: 100%;
+  margin: 24px auto 48px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* 1. คอลัมน์ซ้ายสุด (~20%) */
+.general-info-left {
+  width: 20%;
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+/* 2. คอลัมน์กลาง (Main Content) */
+.general-info-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-width: 0;
+  align-self: stretch;
+}
+
+/* การ์ดเนื้อหาข้อมูลสภาพทั่วไป */
+.general-info-card {
+  width: 100%;
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e1e7e3;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 22px 26px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e8f3ec;
+  margin-bottom: 14px;
+}
+
+.main-header-icon {
+  color: #0c4d2d;
+}
+
+.main-page-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0;
+}
+
+/* หัวข้อหมวดหมู่ใหญ่ 1, 2, 3, 4 */
+.info-section {
+  margin-bottom: 16px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #edf2ee;
+  margin: 16px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+
+.section-icon-green {
+  color: #0c4d2d;
+}
+
+/* หัวข้อย่อย */
+.sub-section {
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.sub-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.badge-number {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #0c4d2d;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sub-title {
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.sub-desc {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+
+/* รายการทิศ 4 ทิศ */
+.directions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 6px 0 10px 10px;
+}
+
+.direction-row {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.direction-bullet {
+  color: #0c4d2d;
+  font-size: 18px;
+  margin-right: 8px;
+  line-height: 1;
+}
+
+.direction-name {
+  font-weight: 700;
+  color: #111827;
+  width: 105px;
+  flex-shrink: 0;
+}
+
+.direction-contact {
+  color: #4b5563;
+  margin-right: 12px;
+}
+
+.direction-detail {
+  color: #1f2937;
+}
+
+/* รายการ 10 หมู่บ้าน */
+.villages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 24px;
+  margin: 8px 0 10px 10px;
+}
+
+.village-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+.village-icon {
+  color: #0c4d2d;
+  flex-shrink: 0;
+}
+
+.village-no {
+  font-weight: 600;
+  color: #4b5563;
+  width: 70px;
+  flex-shrink: 0;
+}
+
+.village-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* หมวด 3: ด้านเศรษฐกิจ - 3 รูปภาพวงกลม */
+.agri-products-grid {
+  display: flex;
+  gap: 28px;
+  margin: 10px 0 8px 10px;
+  align-items: flex-start;
+}
+
+.agri-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  max-width: 140px;
+}
+
+.agri-circle-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5ebe7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease;
+}
+
+.agri-circle-img:hover {
+  transform: scale(1.06);
+}
+
+.agri-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+/* หมวด 4: สภาพสังคม */
+.social-item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-left: 8px;
+}
+
+.social-item-icon {
+  color: #0c4d2d;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.social-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.social-item-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.social-bullet-text {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.utilities-sub-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+  padding-left: 8px;
+}
+
+.utility-line {
+  font-size: 16px;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* 3. คอลัมน์ขวาสุด (~23% มี 3 Article) */
+.general-info-aside {
+  width: 23%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  align-self: stretch;
+}
+
+.aside-article-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2ebe4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aside-article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(12, 77, 45, 0.08);
+}
+
+.aside-card-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+/* Article 1: แผนที่ */
+.aside-map-iframe {
+  width: 100%;
+  flex: 1;
+  min-height: 175px;
+  border-radius: 10px;
+  border: 1px solid #e5ebe7;
+  margin-bottom: 12px;
+}
+
+.aside-map-org {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0 0 4px;
+}
+
+.aside-map-address {
+  font-size: 14.5px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.aside-map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #23673f;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-end;
+  transition: background 0.2s ease;
+}
+
+.aside-map-btn:hover {
+  background: #194e30;
+}
+
+/* Article 2: ข้อมูลสำคัญในภาพรวม */
+.overview-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.overview-stat-box {
+  border: 1px solid #e6ede8;
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  flex: 1;
+}
+
+.overview-stat-box.highlight-pink {
+  background: #fff8f8;
+  border-color: #ffdada;
+}
+
+.overview-stat-icon-wrap {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.overview-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 2px;
+}
+
+.stat-label-title.pink {
+  color: #e11d48;
+}
+
+.stat-number-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.stat-number-bold {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0c4d2d;
+  line-height: 1;
+}
+
+.stat-number-bold.pink {
+  color: #e11d48;
+}
+
+.stat-unit-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.stat-unit-text.pink {
+  color: #e11d48;
+}
+
+.stat-subtext-note {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Article 3: สรุปจุดเด่น */
+.highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.highlight-item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e6ede8;
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.highlight-item-row:hover {
+  background: #f6fbf8;
+  border-color: #c4e4ce;
+  box-shadow: 0 2px 6px rgba(12, 77, 45, 0.06);
+}
+
+.highlight-thumb-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #eef7f2;
+  border: 1px solid #d5ebd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.highlight-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.highlight-item-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+.highlight-item-sub {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+/* 1. สำหรับ iPad / Tablet (769px - 1200px) */
+@media (max-width: 1200px) {
+  .general-info-body {
+    flex-direction: column;
+    padding: 0 18px;
+    gap: 22px;
+    margin: 18px auto 36px;
+  }
+
+  /* นำเนื้อหาหลัก (Main) ขึ้นมาแสดงเป็นอันดับแรก */
+  .general-info-main {
+    order: 1;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  /* Aside 3 การ์ด (แผนที่, สถิติ, จุดเด่น) ปรับเป็น Grid วางแนวนอนสวยงาม */
+  .general-info-aside {
+    order: 2;
+    width: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 16px;
+  }
+
+  .aside-article-card {
+    min-height: auto;
+  }
+
+  /* เมนูซ้ายและ Article ล่างลงมาอยู่ด้านล่างสุด */
+  .general-info-left {
+    order: 3;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .villages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .agri-products-grid {
+    gap: 20px;
+  }
+}
+
+/* 2. สำหรับโทรศัพท์มือถือ (หน้าจอ <= 768px) */
+@media (max-width: 768px) {
+  .general-info-body {
+    margin: 12px auto 28px;
+    padding: 0 12px;
+    gap: 16px;
+  }
+
+  .general-info-card {
+    padding: 16px 14px;
+    border-radius: 12px;
+  }
+
+  .main-page-title {
+    font-size: 21px;
+  }
+
+  .section-title {
+    font-size: 18.5px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  .body-text,
+  .direction-row,
+  .village-item,
+  .social-bullet-text,
+  .utility-line {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .direction-row {
+    flex-wrap: wrap;
+    gap: 2px 6px;
+  }
+
+  .direction-name {
+    width: auto;
+  }
+
+  /* หมู่บ้าน 1 คอลัมน์บนมือถือ */
+  .villages-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .village-no {
+    width: 65px;
+  }
+
+  /* 3 ภาพวงกลมผลผลิตเกษตร จัดกึ่งกลางย่อลงเล็กน้อย */
+  .agri-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 14px;
+    margin: 10px 0;
+  }
+
+  .agri-product-card {
+    max-width: 100px;
+  }
+
+  .agri-circle-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .agri-name {
+    font-size: 13.5px;
+  }
+
+  /* Aside บนมือถือ เรียงลงมาแบบคอลัมน์เดียว */
+  .general-info-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .aside-article-card {
+    padding: 14px;
+  }
+
+  .aside-card-title {
+    font-size: 17px;
+  }
+
+  .aside-map-iframe {
+    min-height: 200px;
+  }
+
+  .stat-number-bold {
+    font-size: 20px;
+  }
+
+  .highlight-item-row {
+    padding: 8px 10px;
+  }
+
+  .highlight-thumb-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .highlight-item-title {
+    font-size: 14.5px;
+  }
+
+  .highlight-item-sub {
+    font-size: 12.5px;
+  }
+}

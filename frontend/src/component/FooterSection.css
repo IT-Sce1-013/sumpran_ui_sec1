@@ -1,0 +1,353 @@
+.footer-section {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== 3 การ์ดด้านบน ==================== */
+.footer-cards-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 36px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1.8fr 1.1fr 1.1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.footer-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e7ede9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.07);
+}
+
+.footer-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #edf2ee;
+}
+
+.footer-card-title {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Card 1: กระดานกระทู้ */
+.forum-title {
+  color: #0c4d2d;
+}
+
+.forum-icon {
+  color: #0c4d2d;
+}
+
+.forum-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.forum-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f3f2;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.forum-item:last-child {
+  border-bottom: none;
+}
+
+.forum-item-icon {
+  color: #0c4d2d;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.forum-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.forum-topic {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.forum-item:hover .forum-topic {
+  color: #0c4d2d;
+}
+
+.forum-stats {
+  font-size: 13.5px;
+  color: #6b7280;
+}
+
+/* Card 2: Social Media */
+.social-title {
+  color: #1f2937;
+}
+
+.social-icon-header {
+  color: #0c4d2d;
+}
+
+.social-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.fb-banner {
+  background: #1877f2;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);
+  transition: all 0.25s ease;
+}
+
+.fb-banner:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(24, 119, 242, 0.3);
+}
+
+.fb-logo-text {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.fb-subtext {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.egp-banner {
+  background: #dbeafe;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.05);
+  transition: all 0.25s ease;
+}
+
+.egp-banner:hover {
+  background: #cee3fe;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
+}
+
+.egp-seal-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #1d4ed8;
+}
+
+.egp-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.egp-title {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.egp-desc {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Card 3: ติดต่อ | Info */
+.info-title {
+  color: #0c4d2d;
+}
+
+.info-header-badge {
+  background: #0c4d2d;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.info-item-icon {
+  color: #0c4d2d;
+  flex-shrink: 0;
+}
+
+.info-item:hover {
+  color: #0c4d2d;
+}
+
+/* ==================== แถบ Footer ท้ายเว็บ ==================== */
+.footer-bottom-bar {
+  width: 100%;
+  background: #e2f1e6;
+  border-top: 1px solid #cee5d4;
+  padding: 10px 16px 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-bottom-content {
+  max-width: 900px;
+  margin: 0 auto ;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-org-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0;
+}
+
+.footer-address {
+  font-size: 15.5px;
+  color: #0c4d2d;
+  margin: 0;
+}
+
+.footer-contact-details {
+  font-size: 15.5px;
+  color: #0c4d2d;
+  margin: 0;
+}
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+@media (max-width: 1024px) {
+  .footer-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 auto 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-cards-container {
+    padding: 0 10px;
+    gap: 14px;
+    margin: 0 auto 20px;
+  }
+
+  .footer-card {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .footer-card-title {
+    font-size: 18.5px;
+  }
+
+  .forum-topic {
+    font-size: 14.5px;
+  }
+
+  .fb-banner {
+    padding: 14px 12px;
+  }
+
+  .fb-logo-text {
+    font-size: 22px;
+  }
+
+  .egp-banner {
+    padding: 12px 14px;
+  }
+
+  .info-item {
+    font-size: 14.5px;
+  }
+
+  .footer-bottom-bar {
+    padding: 12px 12px;
+  }
+
+  .footer-org-name {
+    font-size: 16px;
+  }
+
+  .footer-address,
+  .footer-contact-details {
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+}

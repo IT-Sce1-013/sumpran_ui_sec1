@@ -1,0 +1,170 @@
+.news-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+
+  display: grid;
+
+  /* ซ้าย / กลาง / ขวา */
+  grid-template-columns: 1fr 1.2fr 0.8fr;
+
+  gap: 20px;
+}
+
+
+/* Card */
+.news-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+
+  border: 1px solid #e5e5e5;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* รูป */
+.news-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================
+   Card ซ้าย
+========================= */
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-card img {
+  height: 400px;
+}
+
+.person-card .news-content {
+  text-align: center;
+}
+
+
+/* =========================
+   Card กลาง
+========================= */
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-card img {
+  height: 400px;
+}
+
+
+/* =========================
+   Card ขวา
+========================= */
+
+.side-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.small-card {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.small-card img {
+  height: 180px;
+}
+
+
+/* =========================
+   ข้อความ
+========================= */
+
+.news-content {
+  padding: 15px;
+}
+
+.news-content h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.news-content p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* =========================
+   Responsive (iPad & โทรศัพท์มือถือ)
+========================= */
+
+/* สำหรับ iPad / Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .news-container {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    gap: 16px;
+  }
+
+  .side-cards {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .person-card img,
+  .main-card img {
+    height: 320px;
+  }
+
+  .small-card img {
+    height: 200px;
+  }
+}
+
+/* สำหรับโทรศัพท์มือถือ (<= 768px) */
+@media (max-width: 768px) {
+  .news-container {
+    grid-template-columns: 1fr;
+    width: 94%;
+    gap: 16px;
+    margin: 14px auto;
+  }
+
+  .person-card img,
+  .main-card img {
+    height: 250px;
+  }
+
+  .small-card img {
+    height: 170px;
+  }
+
+  .news-content {
+    padding: 12px 14px;
+  }
+
+  .news-content h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .news-content p {
+    font-size: 15.5px;
+    line-height: 1.5;
+  }
+}

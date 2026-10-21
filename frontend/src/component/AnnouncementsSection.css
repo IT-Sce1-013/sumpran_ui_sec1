@@ -1,0 +1,284 @@
+.announcements-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 26px auto 2px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.announcements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.announcement-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e6eae8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.announcement-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #edf2ef;
+}
+
+.card-header-icon {
+  color: #0c4d2d;
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.announcement-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f1f3f2;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.announcement-item:last-child {
+  border-bottom: none;
+}
+
+/* คอลัมน์ 1: ข่าวประชาสัมพันธ์ */
+.news-text {
+  flex: 1;
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: #374151;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.2s ease;
+}
+
+.announcement-item:hover .news-text {
+  color: #0c4d2d;
+}
+
+.news-thumb-box {
+  width: 52px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.news-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* คอลัมน์ 2: จัดซื้อจัดจ้าง */
+.procurement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f3f2;
+  text-decoration: none;
+  color: inherit;
+}
+
+.procurement-item:last-child {
+  border-bottom: none;
+}
+
+.bullet-icon {
+  margin-top: 4px;
+  color: #0c4d2d;
+  flex-shrink: 0;
+}
+
+.procurement-text {
+  flex: 1;
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.procurement-item:hover .procurement-text {
+  color: #0c4d2d;
+}
+
+.pdf-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #dc2626;
+  padding-left: 6px;
+}
+
+.pdf-tag {
+  font-size: 12px;
+  font-weight: 800;
+  background: #dc2626;
+  color: #ffffff;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+/* คอลัมน์ 3: หนังสือราชการ */
+.gov-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f1f3f2;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gov-item:last-child {
+  border-bottom: none;
+}
+
+.date-badge {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #d1fae5;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+  min-width: 54px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gov-text {
+  flex: 1;
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.gov-item:hover .gov-text {
+  color: #0c4d2d;
+}
+
+/* Footer / ปุ่มดูทั้งหมด */
+.card-footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-view-all {
+  background: #e6f4ea;
+  color: #0c4d2d;
+  padding: 6px 26px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #ceead6;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn-view-all:hover {
+  background: #ceead6;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(12, 77, 45, 0.15);
+}
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+@media (max-width: 1024px) {
+  .announcements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .announcements-section {
+    padding: 0 10px;
+    margin: 16px auto 2px;
+  }
+
+  .announcement-card {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .card-title {
+    font-size: 18.5px;
+  }
+
+  .news-text,
+  .procurement-text,
+  .gov-text {
+    font-size: 14.5px;
+  }
+
+  .news-thumb-box {
+    width: 48px;
+    height: 52px;
+  }
+
+  .date-badge {
+    min-width: 48px;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}

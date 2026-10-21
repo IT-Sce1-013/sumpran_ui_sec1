@@ -1,0 +1,213 @@
+.complaint-header-wrapper {
+  width: 100%;
+  background: linear-gradient(180deg, #d2f0dd 0%, #def4e7 100%);
+  border-bottom: 1px solid #bce4cd;
+  box-shadow: 0 2px 10px rgba(12, 77, 45, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.complaint-header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* ==================== ฝั่งซ้าย: โลโก้และชื่อ อบต. ==================== */
+.complaint-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.complaint-logo-seal {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #ffd600;
+  border: 2px solid #0c4d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.seal-top-text {
+  font-size: 8px;
+  font-weight: 800;
+  color: #0c4d2d;
+  line-height: 1;
+}
+
+.seal-icon-box {
+  color: #0c4d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px 0;
+}
+
+.seal-bottom-text {
+  font-size: 6.5px;
+  font-weight: 700;
+  color: #0c4d2d;
+  line-height: 1;
+}
+
+.complaint-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.complaint-header-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+}
+
+.complaint-header-subtitle {
+  font-size: 16.5px;
+  font-weight: 500;
+  color: #1b5e39;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* ==================== ฝั่งขวา: ปุ่มหน้าหลัก ==================== */
+.complaint-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.complaint-btn-home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #0c4d2d;
+  border: 1.5px solid #ffffff;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.complaint-btn-home:hover {
+  background-color: #f7fdf9;
+  border-color: #bce4cd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(12, 77, 45, 0.15);
+}
+
+.complaint-btn-home svg {
+  color: #0c4d2d;
+  transition: transform 0.2s ease;
+}
+
+.complaint-btn-home:hover svg {
+  transform: scale(1.1);
+}
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+@media (max-width: 1024px) {
+  .complaint-header-container {
+    padding: 12px 20px;
+  }
+
+  .complaint-header-title {
+    font-size: 22px;
+  }
+
+  .complaint-header-subtitle {
+    font-size: 15px;
+  }
+
+  .complaint-btn-home {
+    padding: 8px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .complaint-header-container {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .complaint-header-left {
+    gap: 10px;
+  }
+
+  .complaint-header-title {
+    font-size: 17px;
+  }
+
+  .complaint-header-subtitle {
+    font-size: 12.5px;
+  }
+
+  .complaint-logo-seal {
+    width: 46px;
+    height: 46px;
+  }
+
+  .complaint-btn-home {
+    padding: 7px 12px;
+    font-size: 13.5px;
+    white-space: nowrap;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .complaint-header-container {
+    padding: 8px 10px;
+  }
+
+  .complaint-header-title {
+    font-size: 15px;
+  }
+
+  .complaint-header-subtitle {
+    font-size: 11px;
+  }
+
+  .complaint-logo-seal {
+    width: 40px;
+    height: 40px;
+  }
+
+  .seal-top-text {
+    font-size: 6.5px;
+  }
+
+  .seal-bottom-text {
+    font-size: 5.5px;
+  }
+
+  .complaint-btn-home {
+    padding: 6px 10px;
+    font-size: 12.5px;
+    gap: 4px;
+  }
+}

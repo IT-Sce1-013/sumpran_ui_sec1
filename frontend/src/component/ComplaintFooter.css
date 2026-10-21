@@ -1,0 +1,307 @@
+.complaint-footer-wrapper {
+  width: 100%;
+  background: linear-gradient(180deg, #d6f0df 0%, #def4e7 100%);
+  border-top: 1px solid #bce4cd;
+  padding: 10px 0 6px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.complaint-footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 0.85fr;
+  gap: 16px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ==================== 1. ฝั่งซ้าย: ข้อมูล อบต. ==================== */
+.footer-left-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-seal-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffd600;
+  border: 1.5px solid #0c4d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  padding: 1px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer-seal-top {
+  font-size: 6px;
+  font-weight: 800;
+  color: #0c4d2d;
+  line-height: 1;
+}
+
+.footer-seal-bottom {
+  font-size: 5px;
+  font-weight: 700;
+  color: #0c4d2d;
+  line-height: 1;
+}
+
+.footer-contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+}
+
+.footer-org-heading {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.footer-text-line {
+  font-size: 14.5px;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.footer-text-line a {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+.footer-nav-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #0c4d2d;
+}
+
+.footer-nav-links a {
+  color: #0c4d2d;
+  text-decoration: none;
+}
+
+.footer-nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== 2. ตรงกลาง: สถิติผู้เข้าชม (2 คอลัมน์) ==================== */
+.visitor-stats-card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #cbe6d4;
+  padding: 8px 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.visitor-stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #0c4d2d;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #edf5f0;
+}
+
+.visitor-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 16px;
+}
+
+.visitor-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.stat-label-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.stat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.stat-value {
+  font-family: monospace, sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0c4d2d;
+}
+
+/* ==================== 3. ฝั่งขวา: 4 ปุ่มด่วน ==================== */
+.footer-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.footer-tool-btn {
+  background: #ffffff;
+  border: 1px solid #cbe6d4;
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.footer-tool-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(12, 77, 45, 0.1);
+  border-color: #059669;
+}
+
+.tool-icon-green {
+  color: #0c4d2d;
+  flex-shrink: 0;
+}
+
+.footer-tool-btn-icons {
+  background: #ffffff;
+  border: 1px solid #cbe6d4;
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pdf-icon-badge {
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* ==================== แถบล่างสุด (Copyright) ==================== */
+.complaint-footer-copyright {
+  max-width: 1300px;
+  margin: 8px auto 0;
+  padding: 6px 20px 0;
+  border-top: 1px solid #c4e7d2;
+  text-align: center;
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+@media (max-width: 1024px) {
+  .complaint-footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .footer-left-info {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .complaint-footer-container {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+    gap: 14px;
+  }
+
+  .footer-left-info {
+    grid-column: span 1;
+    gap: 10px;
+  }
+
+  .footer-seal-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-org-heading {
+    font-size: 15.5px;
+  }
+
+  .footer-text-line {
+    font-size: 13.5px;
+  }
+
+  .footer-nav-links {
+    font-size: 13.5px;
+    flex-wrap: wrap;
+  }
+
+  .visitor-stats-card {
+    padding: 8px 10px;
+  }
+
+  .visitor-stats-grid {
+    gap: 4px 8px;
+  }
+
+  .visitor-stat-row {
+    font-size: 13px;
+  }
+
+  .footer-tools-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .footer-tool-btn {
+    font-size: 12px;
+    padding: 6px 4px;
+    gap: 4px;
+  }
+
+  .complaint-footer-copyright {
+    font-size: 11.5px;
+    padding: 6px 12px 0;
+  }
+}

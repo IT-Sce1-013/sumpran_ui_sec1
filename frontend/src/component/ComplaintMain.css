@@ -1,0 +1,511 @@
+.complaint-main-card {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e1e7e3;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* ==================== แถบหัวเรื่องสีเขียว ==================== */
+.main-header-banner {
+  background: #0ea55c;
+  background: linear-gradient(90deg, #0d9488 0%, #059669 100%);
+  color: #ffffff;
+  padding: 12px 24px;
+  flex-shrink: 0;
+}
+
+.main-header-title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* ==================== เนื้อหาภายใน ==================== */
+.main-body-content {
+  padding: 28px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* โลโก้และชื่อองค์กร */
+.main-org-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.main-seal-logo {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #ffd600;
+  border: 2px solid #0c4d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  padding: 2px;
+}
+
+.seal-mini-text-top {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #0c4d2d;
+}
+
+.seal-mini-text-bottom {
+  font-size: 8px;
+  font-weight: 700;
+  color: #0c4d2d;
+}
+
+.main-org-name {
+  font-size: 23px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 6px;
+}
+
+.main-org-desc {
+  font-size: 16.5px;
+  color: #4b5563;
+  margin: 0;
+  max-width: 680px;
+  line-height: 1.55;
+}
+
+/* หมายเหตุ (สีแดง) */
+.main-notes-section {
+  margin-bottom: 24px;
+  color: #dc2626;
+  line-height: 1.6;
+}
+
+.notes-heading {
+  font-size: 17.5px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.notes-text {
+  font-size: 16px;
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+/* ลิงก์ช่องทางภายนอก (ป.ป.ช., ป.ป.ท.) */
+.main-external-links {
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.external-links-prompt {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 4px;
+}
+
+.external-link-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.external-link-row:hover {
+  background: #ffffff;
+  color: #059669;
+  transform: translateX(4px);
+}
+
+.external-arrow {
+  color: #059669;
+  font-weight: 700;
+}
+
+.external-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.external-agency-title {
+  font-weight: 600;
+}
+
+/* ==================== ฟอร์มกรอกข้อมูล ==================== */
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.form-label-col {
+  width: 170px;
+  text-align: right;
+  font-size: 16.5px;
+  font-weight: 600;
+  color: #374151;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.required-star {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+.form-input-col {
+  flex: 1;
+}
+
+.form-text-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16.5px;
+  color: #1f2937;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-text-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: #059669;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15);
+}
+
+.age-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16.5px;
+  color: #374151;
+}
+
+.age-input {
+  width: 80px;
+}
+
+.gender-radio-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 8px;
+  font-size: 16.5px;
+  color: #374151;
+}
+
+.gender-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.form-select {
+  width: 100%;
+  max-width: 280px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16.5px;
+  color: #1f2937;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.form-textarea {
+  width: 100%;
+  max-width: 580px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16.5px;
+  color: #1f2937;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.full-width-input {
+  max-width: 100%;
+}
+
+/* Rich Text Editor Mockup */
+.editor-container {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.editor-toolbar {
+  background: #f1f5f9;
+  border-bottom: 1px solid #cbd5e1;
+  padding: 6px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.editor-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.editor-btn:hover {
+  background: #e2e8f0;
+}
+
+.editor-select {
+  padding: 3px 6px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #334155;
+}
+
+.editor-textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 17px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.editor-statusbar {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 4px 10px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* reCAPTCHA Widget Mockup */
+.recaptcha-widget-box {
+  background: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.recaptcha-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.recaptcha-input {
+  width: 24px;
+  height: 24px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.recaptcha-brand-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 12px;
+  border-left: 1px solid #e5e7eb;
+}
+
+.recaptcha-logo-icon {
+  color: #3b82f6;
+}
+
+.recaptcha-text-logo {
+  font-size: 13px;
+  font-weight: 700;
+  color: #555;
+}
+
+.recaptcha-links {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Footer Submit Button */
+.form-footer-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.btn-submit-complaint {
+  background: #0ea55c;
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-submit-complaint:hover {
+  background: #047857;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.35);
+}
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+@media (max-width: 1024px) {
+  .main-body-content {
+    padding: 24px 24px 32px;
+  }
+
+  .form-text-input {
+    max-width: 100%;
+  }
+
+  .form-select {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header-banner {
+    padding: 10px 16px;
+  }
+
+  .main-header-title {
+    font-size: 20px;
+  }
+
+  .main-body-content {
+    padding: 16px 14px 24px;
+  }
+
+  .main-seal-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main-org-name {
+    font-size: 19px;
+  }
+
+  .main-org-desc {
+    font-size: 14.5px;
+  }
+
+  .form-group-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-label-col {
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+    font-size: 15.5px;
+  }
+
+  .form-text-input,
+  .form-select,
+  .form-textarea {
+    max-width: 100%;
+    font-size: 15.5px;
+  }
+
+  .gender-radio-group {
+    padding-top: 2px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .editor-toolbar {
+    padding: 4px;
+    gap: 3px;
+  }
+
+  .editor-btn {
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  .editor-select {
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+
+  .recaptcha-widget-box {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 10px 12px;
+  }
+
+  .btn-submit-complaint {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 17px;
+  }
+}

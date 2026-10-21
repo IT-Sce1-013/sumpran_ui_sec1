@@ -1,0 +1,175 @@
+.complaint-sidebar-card {
+  background: #f5fbf7;
+  border: 1px solid #d2ebd8;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 2px 12px rgba(12, 77, 45, 0.04);
+  box-sizing: border-box;
+}
+
+/* ==================== ช่องค้นหา ==================== */
+.sidebar-search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #cce8d4;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #374151;
+  background: transparent;
+}
+
+.sidebar-search-input::placeholder {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.sidebar-search-btn {
+  background: #0d9488;
+  border: none;
+  color: #ffffff;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  border-radius: 6px;
+  margin: 3px;
+}
+
+.sidebar-search-btn:hover {
+  background: #0f766e;
+}
+
+/* ==================== รายการเมนู ==================== */
+.sidebar-menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e1f0e6;
+  text-decoration: none;
+  color: #0c4d2d;
+  font-size: 16.5px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.sidebar-menu-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #e5f5eb;
+  padding-left: 12px;
+}
+
+.sidebar-menu-icon {
+  color: #0c4d2d;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ==================== Dropdown เมนูข้อมูลพื้นฐานตำบล ==================== */
+.sidebar-dropdown-group {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1f0e6;
+}
+
+.sidebar-dropdown-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.sidebar-dropdown-btn.active {
+  background-color: #eaf6ee;
+}
+
+.sidebar-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-chevron {
+  color: #0c4d2d;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.sidebar-chevron.rotate {
+  transform: rotate(180deg);
+}
+
+/* เมนูย่อย 6 ข้อ */
+.sidebar-submenu-list {
+  display: flex;
+  flex-direction: column;
+  background: #eef7f1;
+  border-radius: 8px;
+  margin: 4px 4px 8px;
+  padding: 4px 0;
+  border: 1px solid #d7ebd9;
+  animation: fadeInMenu 0.2s ease;
+}
+
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sidebar-submenu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 8px 22px;
+  font-size: 15.5px;
+  color: #166534;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-submenu-item:hover {
+  background-color: #dcf2e3;
+  color: #0c4d2d;
+  font-weight: 700;
+  padding-left: 26px;
+}
+
+.submenu-bullet {
+  font-size: 18px;
+  color: #15803d;
+  line-height: 1;
+}

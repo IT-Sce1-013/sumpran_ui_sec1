@@ -1,0 +1,224 @@
+.quick-services-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ==================== แถวบน: 4 ปุ่ม Action ==================== */
+.action-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ปุ่ม 1: ติดต่อ (กรอบเขียว พื้นขาว) */
+.btn-contact {
+  background-color: #ffffff;
+  color: #0c4d2d;
+  border: 2px solid #0c4d2d;
+}
+
+.btn-contact:hover {
+  background-color: #f0f7f3;
+}
+
+/* ปุ่ม 2: ร้องเรียน (กรอบแดง พื้นขาว) */
+.btn-complaint {
+  background-color: #ffffff;
+  color: #b91c1c;
+  border: 2px solid #b91c1c;
+}
+
+.btn-complaint:hover {
+  background-color: #fef2f2;
+}
+
+/* ปุ่ม 3: ดาวน์โหลดเอกสาร (พื้นเขียวทึบ ตัวหนังสือขาว) */
+.btn-download {
+  background-color: #0c4d2d;
+  color: #ffffff;
+  border: 2px solid #0c4d2d;
+}
+
+.btn-download:hover {
+  background-color: #093c23;
+  border-color: #093c23;
+}
+
+/* ปุ่ม 4: E-Service (พื้นขาว ขอบบาง เงาเบา) */
+.btn-eservice {
+  background-color: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.btn-eservice svg {
+  color: #0c4d2d;
+}
+
+.btn-eservice:hover {
+  background-color: #f9fafb;
+}
+
+/* ==================== แถวล่าง: 10 ไอคอนบริการ ==================== */
+.service-icons-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+.service-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 8px;
+  text-decoration: none;
+  color: #374151;
+  border-right: 1px solid #f1f3f5;
+  transition: all 0.25s ease;
+  position: relative;
+  text-align: center;
+}
+
+.service-item:last-child {
+  border-right: none;
+}
+
+.service-item:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.service-icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  transition: transform 0.25s ease;
+}
+
+.service-item:hover .service-icon-box {
+  transform: scale(1.1);
+}
+
+.service-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #27272a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title span {
+  white-space: nowrap;
+}
+
+/* ปรับแต่งไอคอนแต่ละตัวตามสีในรูปภาพ */
+.icon-home { color: #0c4d2d; }
+.icon-folder { color: #15803d; }
+.icon-handbook { color: #0284c7; }
+.icon-report { color: #d97706; }
+.icon-megaphone { color: #dc2626; }
+.icon-survey { color: #ea580c; }
+.icon-news { color: #ca8a04; }
+.icon-globe { color: #0284c7; }
+.icon-group { color: #db2777; }
+.icon-eservice-card { color: #0284c7; }
+
+/* ==================== Responsive (iPad & โทรศัพท์มือถือ) ==================== */
+@media (max-width: 1024px) {
+  .action-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .service-icons-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 12px;
+  }
+  
+  .service-item {
+    border-right: none;
+    border-bottom: 1px solid #f1f3f5;
+    padding: 14px 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quick-services-section {
+    padding: 0 10px;
+    gap: 14px;
+  }
+
+  .action-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .action-btn {
+    font-size: 15px;
+    padding: 10px 8px;
+    gap: 8px;
+    border-radius: 10px;
+  }
+
+  .service-icons-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6px;
+  }
+  
+  .service-icon-box {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 6px;
+  }
+
+  .service-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .action-buttons-grid {
+    grid-template-columns: 1fr;
+  }
+}
