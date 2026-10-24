@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home } from 'lucide-react';
 import './ComplaintHeader.css';
+import logo from '../assets/logo.png';
+import './nevber.css';
 
 export default function ComplaintHeader() {
   return (
@@ -10,16 +12,7 @@ export default function ComplaintHeader() {
         
         {/* ฝั่งซ้าย: โลโก้ตรา อบต. และชื่อหน่วยงาน */}
         <Link to="/" className="complaint-header-left">
-          <div className="complaint-logo-seal">
-            <span className="seal-top-text">อบต.สามพราน</span>
-            <div className="seal-icon-box">
-              {/* ตราสัญลักษณ์ใบไม้/ต้นไม้ */}
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#0c4d2d">
-                <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4L12 22l5.4-1.6C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10zm-1 15h2v3h-2v-3zm3.5-3.5L12 11l-2.5 2.5-1.5-1.5L12 8l4 4-1.5 1.5z" />
-              </svg>
-            </div>
-            <span className="seal-bottom-text">อ.สามพราน จ.นครปฐม</span>
-          </div>
+          <img src={logo} alt="ตรา อบต.สามพราน" className="navbar-logo-img" />
 
           <div className="complaint-header-info">
             <h1 className="complaint-header-title">องค์การบริหารส่วนตำบลสามพราน</h1>

@@ -1,13 +1,11 @@
 "use client"
 
-
 import React from 'react';
 import './NewCards.css';
-
-const person = "https://www.thaigov.go.th/uploads/images/288/2025/10/jpg/20251015162917_5405.jpg";
-const meeting = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop";
-const activity1 = "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600&auto=format&fit=crop";
-const activity2 = "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=600&auto=format&fit=crop";
+import persons from "../assets/P.jpg"
+import meeting from "../assets/p1.jpg"
+import activity1 from "../assets/p2.jpg"
+import activity2 from "../assets/p3.jpg"
 
 export default function NewsCard() {
   return (
@@ -15,7 +13,7 @@ export default function NewsCard() {
 
       {/* Card ซ้าย */}
       <div className="news-card person-card">
-        <img src={person} alt="บุคลากร" />
+        <img src={persons} alt="บุคลากร" />
 
         <div className="news-content">
           <h2>นายบุญสม จรดล</h2>

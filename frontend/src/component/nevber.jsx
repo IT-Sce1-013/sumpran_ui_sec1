@@ -2,6 +2,7 @@
 
 import React ,{ useState,useEffect } from "react";
 import { House , Folders , University , MessageCircleMore , PhoneCall , Network } from 'lucide-react';
+import logo from '../assets/logo.png';
 import './nevber.css';
 
 export default function Nevber() {
@@ -9,9 +10,12 @@ export default function Nevber() {
         <nav className="navbar">
             <div className="navbar-container">
                 <a href="/" className="navbar-logo-container">
-                    <div className="logo-sub">องค์การบริหารส่วนตำบล</div>
-                    <div className="logo-main">สามพราน</div>
-                    <div className="logo-sub">Sampran Subdistrict Administrative Organization</div>
+                    <img src={logo} alt="ตรา อบต.สามพราน" className="navbar-logo-img" />
+                    <div className="navbar-logo-text">
+                        <div className="logo-sub">องค์การบริหารส่วนตำบล</div>
+                        <div className="logo-main">สามพราน</div>
+                        <div className="logo-sub">Sampran Subdistrict Administrative Organization</div>
+                    </div>
                 </a>
                 <div className="navbar-menu">
                     <a href="#home" className="navbar-item">

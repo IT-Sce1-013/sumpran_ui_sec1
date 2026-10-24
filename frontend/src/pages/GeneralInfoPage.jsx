@@ -13,6 +13,9 @@ import ComplaintHeader from '../component/ComplaintHeader.jsx';
 import ComplaintSidebar from '../component/ComplaintSidebar.jsx';
 import ComplaintArticle from '../component/ComplaintArticle.jsx';
 import ComplaintFooter from '../component/ComplaintFooter.jsx';
+import agriOrchid from '../assets/agri-orchid.jpg';
+import agriFruits from '../assets/agri-fruits.jpg';
+import agriFoliage from '../assets/agri-foliage.jpg';
 import './GeneralInfoPage.css';
 
 export default function GeneralInfoPage() {
@@ -34,15 +37,15 @@ export default function GeneralInfoPage() {
   const agriProducts = [
     {
       name: 'กล้วยไม้',
-      img: 'https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=400&auto=format&fit=crop'
+      img: agriOrchid
     },
     {
       name: 'สวนผลไม้ (ชมพู่, มะม่วง, ฝรั่ง)',
-      img: 'https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=400&auto=format&fit=crop'
+      img: agriFruits
     },
     {
       name: 'ไม้ประดับ (ไม้ใบ)',
-      img: 'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=400&auto=format&fit=crop'
+      img: agriFoliage
     }
   ];
 

@@ -13,6 +13,8 @@ import {
   AlignJustify
 } from 'lucide-react';
 import './ComplaintMain.css';
+import logo from '../assets/logo.png';
+
 
 export default function ComplaintMain() {
   const [formData, setFormData] = useState({
@@ -69,14 +71,7 @@ export default function ComplaintMain() {
       <div className="main-body-content">
         {/* โลโก้และชื่อองค์กร */}
         <div className="main-org-section">
-          <div className="main-seal-logo">
-            <span className="seal-mini-text-top">อบต.สามพราน</span>
-            {/* ตราสัญลักษณ์ใบไม้ */}
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="#0c4d2d">
-              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4L12 22l5.4-1.6C20.2 18.6 22 15.5 22 12c0-5.5-4.5-10-10-10zm-1 15h2v3h-2v-3zm3.5-3.5L12 11l-2.5 2.5-1.5-1.5L12 8l4 4-1.5 1.5z" />
-            </svg>
-            <span className="seal-mini-text-bottom">อ.สามพราน จ.นครปฐม</span>
-          </div>
+          <img src={logo} alt="ตรา อบต.สามพราน" className="complaint-logo-img" />
           <h3 className="main-org-name">องค์การบริหารส่วนตำบลสามพราน</h3>
           <p className="main-org-desc">
             รับแจ้งข้อมูลทุจริต ประพฤติมิชอบ ในบริการประชาชนของพนักงานและลูกจ้าง องค์การบริหารส่วนตำบลสามพราน
