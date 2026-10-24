@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+# Send every route to index.html so React Router can handle it (e.g. /complaint)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
