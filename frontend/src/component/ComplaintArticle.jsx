@@ -6,6 +6,8 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import './ComplaintArticle.css';
+import logo from '../assets/logo.png';
+import './nevber.css';
 
 export default function ComplaintArticle() {
   // นาฬิกาดิจิทัลเดินสดแบบ Real-time
@@ -61,7 +63,7 @@ export default function ComplaintArticle() {
       {/* 2. การ์ด LINE QR Code อบต.สามพราน */}
       <div className="article-card card-line-qr">
         <div className="line-header">
-          <div className="line-seal">อบต.</div>
+          <img src={logo} alt="ตรา อบต.สามพราน" className="navbar-logo-img" />
           <div className="line-org-text">
             <span className="line-org-name">อบต.สามพราน</span>
             <span className="line-id">@sao-sampran</span>
